@@ -10,6 +10,7 @@
     <link rel="icon" type="image/png" href="/images/favicon.png">
 </head>
 <body style="background-image: url(${fotografie})">
-<blockquote><strong>Debugging</strong> /de·bugh·ing/ <em>verb</em><br/>The Classic Mystery Game where you are the detective, the victim, and the murderer.</blockquote>
+<blockquote citate="https://citaty.net/autori/robert-fulghum/">
+    ${quote} </blockquote>
 </body>
 </html>
