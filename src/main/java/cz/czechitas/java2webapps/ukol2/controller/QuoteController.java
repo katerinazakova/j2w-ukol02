@@ -1,4 +1,4 @@
-package cz.czechitas.java2webapps.ukol2;
+package cz.czechitas.java2webapps.ukol2.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -14,18 +14,18 @@ import java.util.Random;
 import java.util.stream.Collectors;
 
 @Controller
-public class MainController {
+public class QuoteController {
     private final Random random = new Random();
 
     @GetMapping("/")
     public ModelAndView settingChangingQuoteAndPhoto() throws IOException {
+        int randomNumber = random.nextInt(7);
         ModelAndView result = new ModelAndView("index");
-        int randomNumber = random.nextInt(6);
+
         result.addObject("fotografie", String.format("/images/fotografie-%d.jpg", randomNumber));
 
-        List<String> allQuotes = readAllLines("R. Fulghum - citáty.txt");
-        String quote = allQuotes.get(randomNumber);
-        result.addObject("quote", quote);
+        List<String> allQuotes = readAllLines("R. Fulghum citaty.txt");
+        result.addObject("quote",allQuotes.get(randomNumber));
 
         return result;
     }

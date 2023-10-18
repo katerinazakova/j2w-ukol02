@@ -10,7 +10,7 @@
     <link rel="icon" type="image/png" href="/images/favicon.png">
 </head>
 <body style="background-image: url(${fotografie})">
-<blockquote citate="https://citaty.net/autori/robert-fulghum/">
+<blockquote cite="https://citaty.net/autori/robert-fulghum/">
     ${quote} </blockquote>
 </body>
 </html>
